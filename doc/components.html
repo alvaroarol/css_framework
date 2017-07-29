@@ -8,7 +8,7 @@
     <body>
 
         <header>
-            <nav class="shadow">
+            <nav class="nav shadow">
                 <ul class="container">
                     <li><a href="grid.html">Grid</a></li>
                     <li><a href="text.html">Text</a></li>
@@ -20,51 +20,261 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <h1>Buttons</h1>
+                    <h1 class="text-lightblue">Components</h1>
                 </div>
                 <div class="row">
-                    <a href="" class="button shadow">Button</a>
-                    <a href="" class="button bg-red shadow">Button</a>
-                    <a href="" class="button bg-yellow shadow">Button</a>
-                    <a href="" class="button bg-green shadow">Button</a>
+                    <h3 class="highlight-lightblue">Navigation bar</h3>
                 </div>
                 <div class="row">
-                    <h1>Panels</h1>
+                    <p>
+                        The navigation bar is declared with the class <strong class="text-white text-highlight-blue">.nav</strong>. The menu elements should be placed inside links within an unordered list.
+                    </p>
                 </div>
-                <div class="row row-wrap">
-                    <div class="panel col col-3 shadow">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#" class="active">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="nav">
+    &lt;ul class="container">
+        &lt;li>&lt;a href="">Item 1&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="" class="active">Item 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="">Item 3&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <p>
+                        To keep the menu list within the maximum width of your page, you can give it a <strong class="text-white text-highlight-blue">.container</strong> or <strong class="text-white text-highlight-blue">.container-large</strong> class.<br />
+                        If you want to show which page is active in the menu, give the correspondent item the <strong class="text-white text-highlight-blue">.active</strong> class. <br />
+                        Finally, you can easily change the color of the navigation bar with the <strong class="text-white text-highlight-blue">.bg-x</strong> classes. This is explained further down.<br />
+                                                It is also recommended to give the navigation bar a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="effects.html" class="text-blue">effects page</a>.
+                    </p>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Buttons</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        Buttons are declared with the class <strong class="text-white text-highlight-blue">.button</strong>. It is recommendend to use the &lt;a> tag for buttons.
+                    </p>
+                </div>
+                <div class="row">
+                    <a href="" class="button">Button</a>
+                    <a href="" class="button">Longer button with more text</a>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;a href="" class="button">Button&lt;/a>
+&lt;a href="" class="button">Longer button with more text&lt;/a></pre>
+                </div>
+                <div class="row">
+                    <p>
+                        The color of the buttons can be changed with the <strong class="text-white text-highlight-blue">.bg-x</strong> classes, like any other element. Scroll further down to see how. <br />
+                        It is also recommended to give buttons a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="effects.html" class="text-blue">effects page</a>.
+                    </p>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Panels</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        A panel is declared with <strong class="text-white text-highlight-blue">.panel</strong>.<br />
+                        Panels are made of 3 parts which can be used individually if needed : <strong class="text-white text-highlight-blue">.panel-header</strong>, <strong class="text-white text-highlight-blue">.panel-body</strong> and <strong class="text-white text-highlight-blue">.panel-footer</strong>.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="panel col col-12">
                         <div class="panel-header">
-                            <span>Panel title</span>
+                            <span>Panel header, usually the title</span>
                         </div>
                         <div class="panel-body">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+                            <p>The body. The content usually comes here.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                        <div class="panel-footer">
-                            <p class="text-right">&copy; 2017 lol</p>
+                        <div class="panel-footer row row-right">
+                            <p>The footer can have multiple uses, like nesting action buttons.</p>
+                            <a href="" class="button">Button</a>
+                            <a href="" class="button">Longer button with more text</a>
                         </div>
                     </div>
-                    <div class="panel col col-4 shadow">
-                        <div class="panel-header">
-                            <span>Panel title</span>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="panel col col-12">
+    &lt;div class="panel-header">
+        &lt;p>The header&lt;/p>
+    &lt;/div>
+    &lt;div class="panel-body">
+        &lt;p>The body&lt;/p>
+    &lt;/div>
+    &lt;div class="panel-footer">
+        &lt;p>The footer&lt;/p>
+    &lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <p>
+                        Notice how the panel element also has the classes col and col-12 to take up all the width available. You can change the width of the panel by setting a different col-x class.
+                    </p>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Component colours</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        There are a few preset colours you can use to spice up your components, or any other element for that matter, thanks to the classes <strong class="text-white text-highlight-blue">.bg-x</strong> where x is one of the available colours :<br />
+                        <strong class="text-white text-highlight-red">.bg-red</strong>
+                        <strong class="text-white text-highlight-blue">.bg-blue</strong>
+                        <strong class="text-white text-highlight-lightblue">.bg-lightblue</strong>
+                        <strong class="text-white text-highlight-yellow">.bg-yellow</strong>
+                        <strong class="text-white text-highlight-green">.bg-green</strong>
+                    </p>
+                </div>
+                <div class="row">
+                    <h6>Navigation bars</h6>
+                </div>
+                <div class="nav bg-red">
+                    <ul>
+                        <li><a href="#">Red</a></li>
+                        <li><a href="#" class="active">Navigation</a></li>
+                        <li><a href="#">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="nav bg-blue">
+                    <ul>
+                        <li><a href="#">Blue</a></li>
+                        <li><a href="#" class="active">Navigation</a></li>
+                        <li><a href="#">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="nav bg-lightblue">
+                    <ul>
+                        <li><a href="#">Light blue</a></li>
+                        <li><a href="#" class="active">Navigation</a></li>
+                        <li><a href="#">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="nav bg-yellow">
+                    <ul>
+                        <li><a href="#">Yellow</a></li>
+                        <li><a href="#" class="active">Navigation</a></li>
+                        <li><a href="#">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="nav bg-green">
+                    <ul>
+                        <li><a href="#">Blue</a></li>
+                        <li><a href="#" class="active">Navigation</a></li>
+                        <li><a href="#">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="nav bg-red">
+    ...
+&lt;/div>
+&lt;div class="nav bg-blue">
+    ...
+&lt;/div>
+&lt;div class="nav bg-lightblue">
+    ...
+&lt;/div>
+&lt;div class="nav bg-yellow">
+    ...
+&lt;/div>
+&lt;div class="nav bg-green">
+    ...
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h6>Buttons</h6>
+                </div>
+                <div class="row">
+                    <a href="" class="button bg-red">Red</a>
+                    <a href="" class="button bg-blue">Blue</a>
+                    <a href="" class="button bg-lightblue">Lightblue</a>
+                    <a href="" class="button bg-yellow">Yellow</a>
+                    <a href="" class="button bg-green">Green</a>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;a href="" class="button bg-red">Red&lt;/a>
+&lt;a href="" class="button bg-blue">Red&lt;/a>
+&lt;a href="" class="button bg-lightblue">Red&lt;/a>
+&lt;a href="" class="button bg-yellow">Red&lt;/a>
+&lt;a href="" class="button bg-green">Red&lt;/a></pre>
+                </div>
+                <div class="row">
+                    <h6>Panels</h6>
+                </div>
+                <div class="row">
+                    <div class="panel col col-3 border-red">
+                        <div class="panel-header bg-red">
+                            <span>Red panel</span>
                         </div>
                         <div class="panel-body">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                        </div>
-                        <div class="panel-footer">
-                            <span>&copy; 2017 lol</span>
+                            <p>Red panel</p>
                         </div>
                     </div>
-                    <div class="panel col col-12 shadow">
-                        <div class="panel-header">
-                            <span>Panel title</span>
+                    <div class="panel col col-3 border-blue">
+                        <div class="panel-header bg-blue">
+                            <span>Blue panel</span>
                         </div>
                         <div class="panel-body">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                        </div>
-                        <div class="panel-footer">
-                            <span>&copy; 2017 lol</span>
+                            <p>Blue panel</p>
                         </div>
                     </div>
+                    <div class="panel col col-3 border-lightblue">
+                        <div class="panel-header bg-lightblue">
+                            <span>Lightblue panel</span>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lightblue panel</p>
+                        </div>
+                    </div>
+                    <div class="panel col col-3 border-yellow">
+                        <div class="panel-header bg-yellow">
+                            <span>Yellow panel</span>
+                        </div>
+                        <div class="panel-body">
+                            <p>Yellow panel</p>
+                        </div>
+                    </div>
+                    <div class="panel col col-3 border-green">
+                        <div class="panel-header bg-green">
+                            <span>Green panel</span>
+                        </div>
+                        <div class="panel-body">
+                            <p>Green panel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="panel col col-3 border-red">
+    &lt;div class="panel-header bg-red">
+    &lt;/div>
+    ...
+&lt;/div>
+&lt;div class="panel col col-3 border-blue">
+    &lt;div class="panel-header bg-blue">
+    &lt;/div>
+    ...
+&lt;/div>
+&lt;div class="panel col col-3 border-lightblue">
+    &lt;div class="panel-header bg-lightblue">
+    &lt;/div>
+    ...
+&lt;/div>
+&lt;div class="panel col col-3 border-yellow">
+    &lt;div class="panel-header bg-yellow">
+    &lt;/div>
+    ...
+&lt;/div>
+&lt;div class="panel col col-3 border-green">
+    &lt;div class="panel-header bg-green">
+    &lt;/div>
+    ...
+&lt;/div></pre>
                 </div>
 
 

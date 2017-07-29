@@ -12,7 +12,7 @@ GENERAL
 }
 
 p{
-    padding: 0.5rem 0;
+    padding: 0.5rem;
 }
 
 /*------------------------------------------------------------------------------
@@ -135,17 +135,17 @@ GRID
 /*------------------------------------------------------------------------------
 NAVIGATION BAR
 ------------------------------------------------------------------------------*/
-nav{
+.nav{
     width: 100%;
     height: 3rem;
     background-color: #7EB2DD;
 }
-nav ul{
+.nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-nav ul li a{
+.nav ul li a{
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
@@ -156,25 +156,25 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
-nav ul li img{
+.nav ul li img{
     max-height: 2.5rem;
 }
-nav ul li a:hover{
+.nav ul li a:hover{
     background-color: #445E93;
 }
-nav.bg-blue ul li a:hover{
+.nav.bg-blue ul li a:hover{
     background-color: #7EB2DD;
 }
-nav.bg-red ul li a:hover{
+.nav.bg-red ul li a:hover{
     background-color: #BF4E30;
 }
-nav.bg-yellow ul li a:hover{
+.nav.bg-yellow ul li a:hover{
     background-color: #F3A738;
 }
-nav.bg-green ul li a:hover{
+.nav.bg-green ul li a:hover{
     background-color: #618B4A;
 }
-nav .active{
+.nav .active{
     border-bottom: 0.2rem solid white;
 }
 
@@ -224,10 +224,14 @@ BUTTON
     padding: 0.75rem 1.5rem;
     border-radius: 0.2rem;
     text-decoration: none;
+    text-align: center;
     color: white;
-    background-color: #7EB2DD;
+    background-color: #AAAAAA;
 }
 .button:hover{
+    background-color: #666666;
+}
+.button.bg-lightblue:hover{
     background-color: #445E93;
 }
 .button.bg-blue:hover{
@@ -250,11 +254,12 @@ pre{
     padding: 1rem;
     border: 1px solid #CCCCCC;
     border-radius: 0.2rem;
-    background-color: #EEEEEE;
     font-family: monospace;
+    white-space: pre-wrap;
+    background-color: #EEEEEE;
 }
 /*------------------------------------------------------------------------------
-TYPOGRAPHY
+TEXT FORMATTING
 ------------------------------------------------------------------------------*/
 .text-center{
     text-align: center;
@@ -283,29 +288,54 @@ TYPOGRAPHY
 .text-green{
     color: #8FB339;
 }
-
-/*------------------------------------------------------------------------------
-TITLE
-------------------------------------------------------------------------------*/
 h1{
     font-size: 3rem;
+    margin-top: 2rem;
 }
 h2{
     font-size: 2.5rem;
+    margin-top: 1.75rem;
 }
 h3{
     font-size: 2.25rem;
+    margin-top: 1.5rem;
 }
 h4{
     font-size: 2rem;
+    margin-top: 1.25rem;
 }
 h5{
     font-size: 1.75rem;
+    margin-top: 1rem;
 }
 h6{
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
-
+.text-highlight-grey{
+    padding: 0 0.5rem;
+    background-color: #CCCCCC;
+}
+.text-highlight-blue{
+    padding: 0 0.5rem;
+    background-color: #445E93;
+}
+.text-highlight-lightblue{
+    padding: 0 0.5rem;
+    background-color: #7EB2DD;
+}
+.text-highlight-red{
+    padding: 0 0.5rem;
+    background-color: #DE6B48;
+}
+.text-highlight-yellow{
+    padding: 0 0.5rem;
+    background-color: #F8C537;
+}
+.text-highlight-green{
+    padding: 0 0.5rem;
+    background-color: #8FB339;
+}
 
 /*------------------------------------------------------------------------------
 BACKGROUND COLOR
@@ -335,6 +365,9 @@ BORDER
 .border-round{
     border-radius: 0.2rem;
 }
+.border-grey{
+    border: solid 0.1rem #CCCCCC;
+}
 .border-blue{
     border: solid 0.1rem #445E93;
 }
@@ -349,6 +382,30 @@ BORDER
 }
 .border-green{
     border: solid 0.1rem #8FB339;
+}
+.highlight-grey{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #CCCCCC;
+}
+.highlight-blue{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #445E93;
+}
+.highlight-lightblue{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #7EB2DD;
+}
+.highlight-red{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #DE6B48;
+}
+.highlight-yellow{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #F8C537;
+}
+.highlight-green{
+    padding-left: 1rem;
+    border-left: 0.2rem solid #8FB339;
 }
 
 
