@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grid</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav class="shadow">
+                <ul class="container">
+                    <li><a href="grid.html" class="active">Grid</a></li>
+                    <li><a href="text.html">Text</a></li>
+                    <li><a href="components.html">Components</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+
+
+
+                <div class="row">
+                    <h1 class="text-lightblue">Grid</h1>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        Like many others, this CSS framework uses the standard 12 column grid structure. It is an easy way to arrange your page layout and, in case you've already used another popular framework like Bootstrap or Materialize, you will feel right at home.
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Container</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        The content is kept inside a container which keeps it at a maximum width of 1200px (<strong>.container</strong> class).<br/>
+                        An alternative wider container keeps it within 1600px (<strong>.container-large</strong> class).
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12 text-center text-white bg-lightblue" style="line-height:2rem">
+                    No container
+                </div>
+            </div>
+            <div class="row">
+                <pre class="col col-12">&lt;div>
+    No container
+&lt;/div></pre>
+            </div>
+            <div class="container-large">
+                <div class="row">
+                    <div class="col col-12 text-center text-white bg-lightblue" style="line-height:2rem">
+                        Large container
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="container-large">
+    Large container
+&lt;/div></pre>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 text-center text-white bg-lightblue" style="line-height:2rem">
+                        Regular container
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="container">
+    Regular container
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        Notice how all the containers have the same width if you lower the window width, since the container only defines a maximum width. Under that maximum width, the container will take up the entire window width.
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>12 columns</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        Each row is declared with the class <strong>.row</strong> and is divided into 12 columns declared with <strong>.col</strong> and <strong>col-x</strong> where x is the number of columns the element will span on.
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="col col-1">1&lt;/div>
+    &lt;div class="col col-1">2&lt;/div>
+    &lt;div class="col col-1">3&lt;/div>
+    &lt;div class="col col-1">4&lt;/div>
+    &lt;div class="col col-1">5&lt;/div>
+    &lt;div class="col col-1">6&lt;/div>
+    &lt;div class="col col-1">7&lt;/div>
+    &lt;div class="col col-1">8&lt;/div>
+    &lt;div class="col col-1">9&lt;/div>
+    &lt;div class="col col-1">10&lt;/div>
+    &lt;div class="col col-1">11&lt;/div>
+    &lt;div class="col col-1">12&lt;/div>
+&lt;/div></pre>
+                    </div>
+                <div class="row text-center">
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">col-3</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">col-3</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">col-3</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">col-3</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="col col-3">col-3&lt;/div>
+    &lt;div class="col col-3">col-3&lt;/div>
+    &lt;div class="col col-3">col-3&lt;/div>
+    &lt;div class="col col-3">col-3&lt;/div>
+&lt;/div></pre>
+                    </div>
+                <div class="row text-center">
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">col-3</div>
+                    <div class="col col-2 bg-lightblue text-white" style="line-height:2rem">col-2</div>
+                    <div class="col col-1 bg-lightblue text-white" style="line-height:2rem">col-1</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="col col-6">col-6&lt;/div>
+    &lt;div class="col col-3">col-3&lt;/div>
+    &lt;div class="col col-2">col-2&lt;/div>
+    &lt;div class="col col-1">col-1&lt;/div>
+&lt;/div></pre>
+                    </div>
+                <div class="row">
+                    <h3>Columns without margin</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        It is possible to have columns without a margin separating them with the class <strong>.col-no-margin</strong>.
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">1</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">2</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">3</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">4</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">5</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">6</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">7</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">8</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">9</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">10</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">11</div>
+                    <div class="col col-1 col-no-margin bg-lightblue text-white" style="line-height:2rem">12</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="col col-1 col-no-margin">1&lt;/div>
+    &lt;div class="col col-1 col-no-margin">2&lt;/div>
+    &lt;div class="col col-1 col-no-margin">3&lt;/div>
+    &lt;div class="col col-1 col-no-margin">4&lt;/div>
+    &lt;div class="col col-1 col-no-margin">5&lt;/div>
+    &lt;div class="col col-1 col-no-margin">6&lt;/div>
+    &lt;div class="col col-1 col-no-margin">7&lt;/div>
+    &lt;div class="col col-1 col-no-margin">8&lt;/div>
+    &lt;div class="col col-1 col-no-margin">9&lt;/div>
+    &lt;div class="col col-1 col-no-margin">10&lt;/div>
+    &lt;div class="col col-1 col-no-margin">11&lt;/div>
+    &lt;div class="col col-1 col-no-margin">12&lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h3>Centered columns</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        In the case of not entirely filling a row, the columns can be centered with the class <strong>.row-center</strong>.
+                    </div>
+                </div>
+                <div class="row row-center text-center">
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">1</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">2</div>
+                </div>
+                <div class="row">
+                <pre class="col col-12">&lt;div class="row row-center">
+    &lt;div class="col col-3">1&lt;/div>
+    &lt;div class="col col-3">2&lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h3>Right aligned columns</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        In the case of not entirely filling a row, the columns can be aligned to the right with the class <strong>.row-right</strong>.
+                    </div>
+                </div>
+                <div class="row row-right text-center">
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">1</div>
+                    <div class="col col-3 bg-lightblue text-white" style="line-height:2rem">2</div>
+                </div>
+                <div class="row">
+                <pre class="col col-12">&lt;div class="row row-right">
+    &lt;div class="col col-3">1&lt;/div>
+    &lt;div class="col col-3">2&lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h3>Row wrap</h3>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        In the case of filling up the row with more than 12 columns, the additional ones will still be placed on the same row and they all will be resized to fit the row.<br />
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        If you want to avoid this behaviour, you can add the class <strong>.row-wrap</strong> to the row. This way, the extra columns will automatically be placed below, as if you created a new row.
+                    </div>
+                </div>
+                <div class="row row-wrap text-center">
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                    <div class="col col-6 bg-lightblue text-white" style="line-height:2rem">col-6</div>
+                </div>
+                <div class="row">
+                <pre class="col col-12">&lt;div class="row row-wrap">
+    &lt;div class="col col-6">col-6&lt;/div>
+    &lt;div class="col col-6">col-6&lt;/div>
+    &lt;div class="col col-6">col-6&lt;/div>
+&lt;/div></pre>
+                </div>
+
+
+
+            </div> <!-- container end -->
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>
