@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Helpers</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav class="nav shadow">
+                <ul class="container">
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="text.html">Text</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="helpers.html" class="active">Helpers</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+
+
+                <div class="row">
+                    <h1 class="text-lightblue">Helpers</h1>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Vertical alignment</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        If your columns don't have the same height, the default is to vertically align them to the top. You can change this to the bottom or the center with the classes <strong class="text-white text-highlight-blue">.row-vertical-bottom</strong> and <strong class="text-white text-highlight-blue">.row-vertical-center</strong>.
+                    </p>
+                </div>
+                <div class="row">
+                    <h6>Aligned to the top (default)</h6>
+                </div>
+                <div class="row text-center">
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Short content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">A bit longer<br/>content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Even<br/>longer<br/>content</div>
+                </div>
+                <div class="row">
+                    <h6>Aligned to the bottom</h6>
+                </div>
+                <div class="row row-vertical-bottom text-center">
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Short content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">A bit longer<br/>content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Even<br/>longer<br/>content</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row row-vertical-bottom">
+    &lt;div class="col col-4">Short content&lt;/div>
+    &lt;div class="col col-4">A bit longer&lt;br/>content&lt;/div>
+    &lt;div class="col col-4">Even&lt;br/>longer&lt;br/>content&lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h6>Aligned to the center</h6>
+                </div>
+                <div class="row row-vertical-center text-center">
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Short content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">A bit longer<br/>content</div>
+                    <div class="col col-4 bg-lightblue text-white" style="line-height:2rem">Even<br/>longer<br/>content</div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row row-vertical-center">
+    &lt;div class="col col-4">Short content&lt;/div>
+    &lt;div class="col col-4">A bit longer&lt;br/>content&lt;/div>
+    &lt;div class="col col-4">Even&lt;br/>longer&lt;br/>content&lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Shadow</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        You can add a shadow to your elements with the class <strong class="text-white text-highlight-blue">.shadow</strong> for a layered effect on your page. This is widely used on navigation bars and buttons for example.
+                    </p>
+                </div>
+                <div class="row">
+                    <a href="" class="button col col-2 bg-lightblue shadow">Buttons</a>
+                    <a href="" class="button col col-1 bg-red shadow">with</a>
+                    <a href="" class="button col col-1 bg-yellow shadow">a</a>
+                    <a href="" class="button col col-2 bg-green shadow">a shadow</a>
+                    <div class="panel col col-6 border-blue shadow">
+                        <div class="panel-header bg-blue">
+                            Panel
+                        </div>
+                        <div class="panel-body">
+                            with a shadow
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;a href="" class="button col col-2 bg-lightblue shadow">Buttons&lt;/a>
+    &lt;a href="" class="button col col-1 bg-red shadow">with&lt;/a>
+    &lt;a href="" class="button col col-1 bg-yellow shadow">a&lt;/a>
+    &lt;a href="" class="button col col-2 bg-green shadow">a shadow&lt;/a>
+    &lt;div class="panel col col-6 border-blue shadow">
+        &lt;div class="panel-header bg-blue">
+            Panel
+        &lt;/div>
+        &lt;div class="panel-body">
+            with a shadow
+        &lt;/div>
+    &lt;/div>
+&lt;/div></pre>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Shadow on hover</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        In some cases, you only want to show the shadow when an element is hovered by the cursor. This can be specified with the class <strong class="text-white text-highlight-blue">.shadow-hover</strong>. This is a good way to give more emphasis on the element that is hovered.
+                    </p>
+                </div>
+                <div class="row row-center">
+                    <div class="panel col col-6 border-blue shadow-hover">
+                        <div class="panel-header bg-blue">
+                            Hover me
+                        </div>
+                        <div class="panel-body">
+                            to see the shadow
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;div class="row row-center">
+    &lt;div class="panel col col-6 border-blue shadow-hover">
+        &lt;div class="panel-header bg-blue">
+            Hover me
+        &lt;/div>
+        &lt;div class="panel-body">
+            to see the shadow
+        &lt;/div>
+    &lt;/div>
+&lt;/div></pre>
+                </div>
+
+
+            </div> <!-- container -->
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <ul class="row" style="list-style:none;">
+                    <li class="col col-1"><a href="https://github.com/alvaroarol/css_framework">GitHub</a></li>
+                    <li class="col col-1"><a href="grid.html">Home</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col col-11">Coded by <a href="https://github.com/alvaroarol/">@alvaroarol</a> with lots of love &lt;3</div>
+                    <div class="col col-1 text-right">&copy; 2017</div>
+            </div>
+        </footer>
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>

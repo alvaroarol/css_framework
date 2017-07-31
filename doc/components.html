@@ -13,6 +13,7 @@
                     <li><a href="grid.html">Grid</a></li>
                     <li><a href="text.html">Text</a></li>
                     <li><a href="components.html" class="active">Components</a></li>
+                    <li><a href="helpers.html">Helpers</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,20 +39,60 @@
                     </ul>
                 </div>
                 <div class="row">
-                    <pre class="col col-12">&lt;div class="nav">
+                    <pre class="col col-12">&lt;nav class="nav">
     &lt;ul class="container">
         &lt;li>&lt;a href="">Item 1&lt;/a>&lt;/li>
         &lt;li>&lt;a href="" class="active">Item 2&lt;/a>&lt;/li>
         &lt;li>&lt;a href="">Item 3&lt;/a>&lt;/li>
     &lt;/ul>
-&lt;/div></pre>
+&lt;/nav></pre>
                 </div>
                 <div class="row">
                     <p>
                         To keep the menu list within the maximum width of your page, you can give it a <strong class="text-white text-highlight-blue">.container</strong> or <strong class="text-white text-highlight-blue">.container-large</strong> class.<br />
                         If you want to show which page is active in the menu, give the correspondent item the <strong class="text-white text-highlight-blue">.active</strong> class. <br />
                         Finally, you can easily change the color of the navigation bar with the <strong class="text-white text-highlight-blue">.bg-x</strong> classes. This is explained further down.<br />
-                                                It is also recommended to give the navigation bar a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="effects.html" class="text-blue">effects page</a>.
+                        It is also recommended to give the navigation bar a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="helpers.html" class="text-blue">helpers page</a>.
+                    </p>
+                </div>
+                <div class="row">
+                    <h3 class="highlight-lightblue">Footer</h3>
+                </div>
+                <div class="row">
+                    <p>
+                        The footer is declared with the class <strong class="text-white text-highlight-blue">.footer</strong>. It can contain whatever you wish and you can use the grid system to organize its content.
+                    </p>
+                </div>
+                <div class="footer">
+                    <ul class="row" style="list-style:none;">
+                        <li class="col col-2"><a href="">Some link</a></li>
+                        <li class="col col-2"><a href="">Another link</a></li>
+                        <li class="col col-2"><a href="">Some other link</a></li>
+                    </ul>
+                    <div class="row">
+                        <div class="col col-10">Some more info like contact, an about, ... Whatever you wish :)</div>
+                        <div class="col col-2">Copyright for example &copy;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <pre class="col col-12">&lt;footer class="footer">
+    &lt;div class="container">
+        &lt;ul class="row" style="list-style:none;">
+            &lt;li class="col col-2">&lt;a href="">Some link&lt;/a>&lt;/li>
+            &lt;li class="col col-2">&lt;a href="">Another link&lt;/a>&lt;/li>
+            &lt;li class="col col-2">&lt;a href="">Some other link&lt;/a>&lt;/li>
+        &lt;/ul>
+        &lt;div class="row">
+            &lt;div class="col col-10">Some more info like contact, an about, ... Whatever you wish :)&lt;/div>
+            &lt;div class="col col-2">Copyright for example &copy;&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/footer></pre>
+                </div>
+                <div class="row">
+                    <p>
+                        Like for the navigation bar, to keep the contents within the maximum width of your page, you place a <strong class="text-white text-highlight-blue">.container</strong> or <strong class="text-white text-highlight-blue">.container-large</strong> class inside the footer.<br />
+                        You can easily change the color of the footer with the <strong class="text-white text-highlight-blue">.bg-x</strong> classes. This is explained further down.<br />
                     </p>
                 </div>
                 <div class="row">
@@ -73,7 +114,7 @@
                 <div class="row">
                     <p>
                         The color of the buttons can be changed with the <strong class="text-white text-highlight-blue">.bg-x</strong> classes, like any other element. Scroll further down to see how. <br />
-                        It is also recommended to give buttons a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="effects.html" class="text-blue">effects page</a>.
+                        It is also recommended to give buttons a slight shadow with the class <strong class="text-white text-highlight-blue">.shadow</strong> as explained in the <a href="helpers.html" class="text-blue">helpers page</a>.
                     </p>
                 </div>
                 <div class="row">
@@ -102,15 +143,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <pre class="col col-12">&lt;div class="panel col col-12">
-    &lt;div class="panel-header">
-        &lt;p>The header&lt;/p>
-    &lt;/div>
-    &lt;div class="panel-body">
-        &lt;p>The body&lt;/p>
-    &lt;/div>
-    &lt;div class="panel-footer">
-        &lt;p>The footer&lt;/p>
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="panel col col-12">
+        &lt;div class="panel-header">
+            &lt;p>The header&lt;/p>
+        &lt;/div>
+        &lt;div class="panel-body">
+            &lt;p>The body&lt;/p>
+        &lt;/div>
+        &lt;div class="panel-footer">
+            &lt;p>The footer&lt;/p>
+        &lt;/div>
     &lt;/div>
 &lt;/div></pre>
                 </div>
@@ -250,30 +293,32 @@
                     </div>
                 </div>
                 <div class="row">
-                    <pre class="col col-12">&lt;div class="panel col col-3 border-red">
-    &lt;div class="panel-header bg-red">
+                    <pre class="col col-12">&lt;div class="row">
+    &lt;div class="panel col col-3 border-red">
+        &lt;div class="panel-header bg-red">
+        &lt;/div>
+        ...
     &lt;/div>
-    ...
-&lt;/div>
-&lt;div class="panel col col-3 border-blue">
-    &lt;div class="panel-header bg-blue">
+    &lt;div class="panel col col-3 border-blue">
+        &lt;div class="panel-header bg-blue">
+        &lt;/div>
+        ...
     &lt;/div>
-    ...
-&lt;/div>
-&lt;div class="panel col col-3 border-lightblue">
-    &lt;div class="panel-header bg-lightblue">
+    &lt;div class="panel col col-3 border-lightblue">
+        &lt;div class="panel-header bg-lightblue">
+        &lt;/div>
+        ...
     &lt;/div>
-    ...
-&lt;/div>
-&lt;div class="panel col col-3 border-yellow">
-    &lt;div class="panel-header bg-yellow">
+    &lt;div class="panel col col-3 border-yellow">
+        &lt;div class="panel-header bg-yellow">
+        &lt;/div>
+        ...
     &lt;/div>
-    ...
-&lt;/div>
-&lt;div class="panel col col-3 border-green">
-    &lt;div class="panel-header bg-green">
+    &lt;div class="panel col col-3 border-green">
+        &lt;div class="panel-header bg-green">
+        &lt;/div>
+        ...
     &lt;/div>
-    ...
 &lt;/div></pre>
                 </div>
 
@@ -282,8 +327,16 @@
             </div> <!-- container -->
         </main>
 
-        <footer>
-
+        <footer class="footer">
+            <div class="container">
+                <ul class="row" style="list-style:none;">
+                    <li class="col col-1"><a href="https://github.com/alvaroarol/css_framework">GitHub</a></li>
+                    <li class="col col-1"><a href="grid.html">Home</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col col-11">Coded by <a href="https://github.com/alvaroarol/">@alvaroarol</a> with lots of love &lt;3</div>
+                    <div class="col col-1 text-right">&copy; 2017</div>
+            </div>
         </footer>
 
         <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
