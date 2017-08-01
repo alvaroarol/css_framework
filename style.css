@@ -96,10 +96,10 @@ GRID
     width: calc(1000%/12 - 1rem);
 }
 .col-11{
-    width: calc(1100%/12);
+    width: calc(1100%/12 - 1rem);
 }
 .col-12{
-    width: calc(1200%/12);
+    width: calc(1200%/12 - 1rem);
 }
 .col-1.col-no-margin{
     width: calc(100%/12);
@@ -231,6 +231,57 @@ FORM
 .form-vertical{
     display: flex;
     flex-direction: column;
+}
+
+/*------------------------------------------------------------------------------
+TABLE
+------------------------------------------------------------------------------*/
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td{
+    padding-left: 1rem;
+    line-height: 3rem;
+}
+.table thead{
+    background-color: #7EB2DD;
+    font-weight: bold;
+}
+.table thead.bg-grey{
+    background-color: #CCCCCC;
+}
+.table thead.bg-lightblue{
+    background-color: #7EB2DD;
+}
+.table thead.bg-blue{
+    background-color: #445E93;
+}
+.table thead.bg-red{
+    background-color: #DE6B48;
+}
+.table thead.bg-yellow{
+    background-color: #F8C537;
+}
+.table thead.bg-green{
+    background-color: #8FB339;
+}
+.table thead td,
+.table thead.bg-lightblue td,
+.table thead.bg-blue td,
+.table thead.bg-red td,
+.table thead.bg-yellow td,
+.table thead.bg-green td{
+    color: white;
+}
+.table.table-striped tbody tr:nth-of-type(2n-1){
+    background-color: #EEEEEE;
+}
+.table.table-hover tbody tr:hover{
+    background-color: #EEEEEE;
+}
+.table.table-underlined tbody tr:not(:last-of-type){
+    border-bottom: 1px solid #CCCCCC;
 }
 
 /*------------------------------------------------------------------------------
